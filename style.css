@@ -1,0 +1,107 @@
+:root {
+  --main-color: #0075ff;
+  --color-white: white;
+  --main-pixel: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.quiz-container {
+  width: 600px;
+  margin: var(--main-pixel) auto;
+  padding: 5px 0 var(--main-pixel);
+  background-color: #f8f8f8;
+}
+
+div.catagorey,
+div.count {
+  font-weight: 500;
+}
+
+div.answer-area,
+form,
+div.content-info {
+  background-color: var(--color-white);
+  padding: var(--main-pixel);
+  margin: 0 var(--main-pixel);
+}
+
+div.content-info {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--main-pixel);
+}
+
+form {
+  margin-top: var(--main-pixel);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--main-pixel);
+}
+
+form div:not(:last-of-type) {
+  display: block;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: var(--main-pixel);
+  padding-bottom: var(--main-pixel);
+}
+
+label {
+  font-size: 17px;
+  position: relative;
+  top: -1px;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--main-color);
+}
+
+button {
+  color: var(--color-white);
+  background-color: var(--main-color);
+  border: none;
+  width: calc(100% - 20px);
+  padding: var(--main-pixel);
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+div.container-foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px var(--main-pixel);
+}
+
+li {
+  display: inline-block;
+  background-color: #ddd;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+li.active {
+  background-color: var(--main-color);
+}
+
+label {
+  cursor: pointer;
+}
